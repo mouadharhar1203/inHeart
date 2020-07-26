@@ -40,20 +40,20 @@
 	
 	First go to the `inHeart-server` folder 
 	
-	You can run the spring boot app by typing the following command -
+	You can run the spring boot app by typing the following command
 
 	mvn spring-boot:run
 
 	The server will start on port 8090.
 
-	You can also package the application in the form of a `jar` file and then run it like so -
+	You can also package the application in the form of a `jar` file and then run it like so 
 
 	mvn package
 	java -jar target/inHeart-server.jar
 
 **Run the react application**
 
-	First go to the `inHeart-client` folder -
+	First go to the `inHeart-client` folder
 
 	cd inHeart-client
 
