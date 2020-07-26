@@ -18,10 +18,10 @@
 
 2. **Docker Compose**
 
-	```bash
-	docker-compose build
-	docker-compose up
-	```
+      ```bash
+      docker-compose build
+      docker-compose up
+      ```
 
 
 3. **Enjoy the application**
