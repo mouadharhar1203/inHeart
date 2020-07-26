@@ -1,71 +1,79 @@
-# inHeart
-inHeart app : SpringBoot / React JS / mySql / Docker / Azure Cloud
+# inHeart app : SpringBoot / React JS / mySql / Docker / Azure Cloud
 
 ## Building a Full Stack application with Spring Boot, Spring Security, JWT, React JS, ReactStrap, mySQL and Docker
 
-![App Screenshot](screenshot.png)
 
+## Steps to Setup the Full Stack application with Docker :
 
-## Steps to Setup the Spring Boot Back end app (polling-app-server)
-
-1. **Clone the application**
+  **Requirements**
 
 	```bash
-	git clone https://github.com/callicoder/spring-security-react-ant-design-polls-app.git
-	cd polling-app-server
+	- Docker : download from https://www.docker.com/
+	- A server or a virtual machine
 	```
+	
 
-2. **Create MySQL database**
+1. **Clone the application inHeart**
 
 	```bash
-	create database polling_app
+	git clone https://github.com/mouadharhar1203/inHeart
+	cd inHEART
 	```
 
-3. **Change MySQL username and password as per your MySQL installation**
+2. **Docker Compose**
 
-	+ open `src/main/resources/application.properties` file.
+	```bash
+	docker-compose build
+	docker-compose up
+	```
 
-	+ change `spring.datasource.username` and `spring.datasource.password` properties as per your mysql installation
 
-4. **Run the app**
+3. **Enjoy the application**
 
+	+ http://localhost:9090/
+
+
+## Steps to Setup the Full Stack application with Docker :
+
+  **Requirements**
+
+	```bash
+	- JDK 11 - IDE (Eclipse, IntelliJ IDEA ...) for backend
+	- Node - IDE(Vistual Studio Code ...) for frontend
+	- mySQL database on your server
+	```
+	
+**Run the spring boot application**
+	
+	First go to the `inHeart-server` folder 
+	
 	You can run the spring boot app by typing the following command -
 
 	```bash
 	mvn spring-boot:run
 	```
 
-	The server will start on port 8080.
+	The server will start on port 8090.
 
 	You can also package the application in the form of a `jar` file and then run it like so -
 
 	```bash
 	mvn package
-	java -jar target/polls-0.0.1-SNAPSHOT.jar
-	```
-5. **Default Roles**
-	
-	The spring boot app uses role based authorization powered by spring security. To add the default roles in the database, I have added the following sql queries in `src/main/resources/data.sql` file. Spring boot will automatically execute this script on startup -
-
-	```sql
-	INSERT IGNORE INTO roles(name) VALUES('ROLE_USER');
-	INSERT IGNORE INTO roles(name) VALUES('ROLE_ADMIN');
+	java -jar target/inHeart-server.jar
 	```
 
-	Any new user who signs up to the app is assigned the `ROLE_USER` by default.
+**Run the react application**
 
-## Steps to Setup the React Front end app (polling-app-client)
+	First go to the `inHeart-client` folder -
 
-First go to the `polling-app-client` folder -
+	```bash
+	cd inHeart-client
+	```
 
-```bash
-cd polling-app-client
-```
+	Then type the following command to install the dependencies and start the application -
 
-Then type the following command to install the dependencies and start the application -
+	```bash
+	npm install && npm start
+	```
 
-```bash
-npm install && npm start
-```
-
-The front-end server will start on port `3000`.
+	The front-end server will start on port `3000`.
