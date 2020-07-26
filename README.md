@@ -1,4 +1,4 @@
-# inHeart app : SpringBoot / React JS / mySql / Docker / Azure Cloud
+# inHeart app 
 
 ## Building a Full Stack application with Spring Boot, Spring Security, JWT, React JS, ReactStrap, mySQL and Docker
 
