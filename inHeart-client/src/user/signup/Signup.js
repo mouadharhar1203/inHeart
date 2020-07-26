@@ -56,13 +56,13 @@ class Signup extends Component {
         signup(signupRequest)
         .then(response => {
             notification.success({
-                message: 'SPREACT SHOP',
+                message: 'inHEART App',
                 description: "Thank you! You're successfully registered. Please Login to continue!",
             });          
             this.props.history.push("/login");
         }).catch(error => {
             notification.error({
-                message: 'SPREACT SHOP',
+                message: 'inHEART App',
                 description: 'Sorry! Something went wrong. Please try again!'
             });
         });

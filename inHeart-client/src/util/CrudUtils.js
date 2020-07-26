@@ -15,7 +15,7 @@ export function editUser(id, username,email, password, role) {
 export function updateUser() {
     if( this.state.editUserData.username.length < 5 || this.state.editUserData.email.length < 5) {
         notification.warning({
-            message: 'SPREACT SHOP',
+            message: 'inHEART App',
             description: "Username & email must have at least 5 characters. Please try again !",
         });
         this.toogleEditUserModal();  
@@ -24,7 +24,7 @@ export function updateUser() {
     editUserRequest(this.state.editUserData)
     .then(response => {
         notification.success({
-            message: 'SPREACT SHOP',
+            message: 'inHEART App',
             description: "User updated  successfully, you will be disconnected !",
         });
         this.toogleEditUserModal();  
@@ -38,7 +38,7 @@ export function updateUser() {
         setTimeout(function() { window.location.reload(); }, 1000);           
     }).catch(error => {
         notification.error({
-            message: 'SPREACT SHOP',
+            message: 'inHEART App',
             description: "User not edited. You can't edit other users unless you are ADMIN !"
         });
         this.toogleEditUserModal();  
@@ -53,7 +53,7 @@ export function addClient() {
         || this.state.newClientData.dateNaissance === null || this.state.newClientData.dateProc === null) {
             this.toogleNewClientModal();
             notification.error({
-                message: 'SPREACT SHOP',
+                message: 'inHEART App',
                 description: "Fields can't be empty !",
             });
             return  
@@ -63,7 +63,7 @@ export function addClient() {
         if(!response) {
             this.toogleNewClientModal();
             notification.error({
-                message: 'SPREACT SHOP',
+                message: 'inHEART App',
                 description: "Client " + this.state.newClientData.nom.toUpperCase() + " " + this.state.newClientData.prenom.toUpperCase() + " already exists !",
             });
             return  
@@ -71,14 +71,14 @@ export function addClient() {
             addNewClient(this.state.newClientData)
                 .then(response => {
                     notification.success({
-                        message: 'SPREACT SHOP',
+                        message: 'inHEART App',
                         description: "Client added successfully !",
                     });
                     this.toogleNewClientModal(); 
                     setTimeout(function() { window.location.reload(); }, 1000);                 
                 }).catch(error => {
                     notification.error({
-                        message: 'SPREACT SHOP',
+                        message: 'inHEART App',
                         description: error.Message
                     });
                 });
@@ -96,7 +96,7 @@ export function updateClient() {
     if( this.state.editClientData.nom.length <= 3 || this.state.editClientData.prenom.length <= 3) {
         this.toogleEditClientModal();  
         notification.warning({
-            message: 'SPREACT SHOP',
+            message: 'inHEART App',
             description: "First name & last name must have at least 3 characters each. Please try again !",
         });
         return
@@ -104,7 +104,7 @@ export function updateClient() {
     if( this.state.editClientData.dateNaissance === null || this.state.editClientData.dateProc === null) {
         this.toogleEditClientModal(); 
         notification.warning({
-            message: 'SPREACT SHOP',
+            message: 'inHEART App',
             description: "Dates of birth and procedure can't be empty. Please try again !",
         }); 
         return
@@ -112,7 +112,7 @@ export function updateClient() {
     editClientRequest(this.state.editClientData)
     .then(response => {
         notification.success({
-            message: 'SPREACT SHOP',
+            message: 'inHEART App',
             description: "Client updated  successfully !",
         });
         this.toogleEditClientModal();  
@@ -126,7 +126,7 @@ export function updateClient() {
         setTimeout(function() { window.location.reload(); }, 1000);           
     }).catch(error => {
         notification.error({
-            message: 'SPREACT SHOP',
+            message: 'inHEART App',
             description: error.Error
         });
         this.toogleEditClientModal();  
@@ -162,13 +162,13 @@ export function deleteClient() {
         } 
         
         notification.success({
-            message: 'SPREACT SHOP',
+            message: 'inHEART App',
             description: "Client deleted successfully !",
         });
         setTimeout(function() { window.location.reload(); }, 1000);
     }).catch(error => {
         notification.error({
-            message: 'SPREACT SHOP',
+            message: 'inHEART App',
             description: "You can't delete clients unless you are ADMIN !"
         });
     });
@@ -186,13 +186,13 @@ export function activateClientRequest() {
         } 
         
         notification.success({
-            message: 'SPREACT SHOP',
+            message: 'inHEART App',
             description: "Client activated successfully !",
         });
         setTimeout(function() { window.location.reload(); }, 1000);
     }).catch(error => {
         notification.error({
-            message: 'SPREACT SHOP',
+            message: 'inHEART App',
             description: "You can't activate clients unless you are ADMIN !"
         });
     });

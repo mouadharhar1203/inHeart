@@ -105,7 +105,7 @@ class Clients extends Component {
             this.setState({clients: response, searchClients: response});
             }).catch(error => {
                 notification.error({
-                    message: 'SPREACT SHOP',
+                    message: 'inHEART App',
                     description: 'You have been disconnected, try to connect again !'
                 });
             });

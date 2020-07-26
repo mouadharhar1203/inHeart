@@ -49,7 +49,7 @@ class App extends Component {
         });
       }).catch(error => {
         notification.warning({
-          message: 'SPREACT SHOP',
+          message: 'inHEART App',
           description: "You are not connected !",
         }); 
       });
@@ -71,7 +71,7 @@ class App extends Component {
       this.props.history.push(redirectTo);
       
       notification[notificationType]({
-        message: 'SPREACT SHOP',
+        message: 'inHEART App',
         description: description,
       });
   }
@@ -79,7 +79,7 @@ class App extends Component {
   // After login : notification + redirect to homePage (Clients table)
   handleLogin() {
       notification.success({
-        message: 'SPREACT SHOP',
+        message: 'inHEART App',
         description: "You're successfully logged in.",
       });
       this.loadCurrentUser();

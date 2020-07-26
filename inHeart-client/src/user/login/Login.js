@@ -37,7 +37,7 @@ class LoginForm extends Component {
                 .then(response => {
                     if(response.Message === "Username deleted") {
                         notification.error({
-                            message: 'SPREACT SHOP',
+                            message: 'inHEART App',
                             description: 'This username is deleted. Please contact support to activate it !'
                         });
                         return
@@ -47,12 +47,12 @@ class LoginForm extends Component {
                 }).catch(error => {
                     if(error.status === 401) {
                         notification.error({
-                            message: 'SPREACT SHOP',
+                            message: 'inHEART App',
                             description: 'Your Username or Password is incorrect. Please try again!'
                         });                    
                     } else {
                         notification.error({
-                            message: 'SPREACT SHOP',
+                            message: 'inHEART App',
                             description: 'Sorry! Something went wrong. Please try again!'
                         });                                            
                     }
