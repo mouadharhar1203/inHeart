@@ -7,8 +7,8 @@
 
   **Requirements**
 
-	- Docker : download from https://www.docker.com/
-	- A server or a virtual machine
+	Docker : download from https://www.docker.com/
+	A server or a virtual machine
 	
 
 1. **Clone the application inHeart**
