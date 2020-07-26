@@ -1,6 +1,5 @@
-# inHeart app 
-
 ## Building a Full Stack application with Spring Boot, Spring Security, JWT, React JS, ReactStrap, mySQL and Docker
+
 
 
 ## Steps to Setup the Full Stack application with Docker :
