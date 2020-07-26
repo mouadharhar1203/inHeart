@@ -1,4 +1,4 @@
-## Building a Full Stack application with Spring Boot, Spring Security, JWT, React JS, ReactStrap, mySQL and Docker
+## Full Stack app with Spring Boot, Spring Security, JWT, React JS, ReactStrap, mySQL and Docker
 
 
 
