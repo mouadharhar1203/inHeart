@@ -1,0 +1,52 @@
+{
+  "name": "IDV-JAV5",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "@fortawesome/react-fontawesome": "^0.1.8",
+    "@material-ui/lab": "^4.0.0-alpha.41",
+    "antd": "^3.2.2",
+    "axios": "^0.19.1",
+    "bootstrap": "^4.4.1",
+    "bootstrap-table": "^1.17.1",
+    "docker": "^1.0.0",
+    "file-saver": "^2.0.2",
+    "lodash.some": "^4.6.0",
+    "material-ui-rating": "^4.2.0",
+    "mdbootstrap": "^4.19.1",
+    "mdbreact": "^4.25.0",
+    "muicss": "^0.10.1",
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-bootstrap-table-next": "^4.0.3",
+    "react-csv": "^2.0.3",
+    "react-dom": "^16.12.0",
+    "react-icons": "^3.8.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.5",
+    "react-select": "^3.0.8",
+    "react-star-rating": "^1.4.2",
+    "react-star-rating-component": "^1.4.1",
+    "react-star-ratings": "^2.3.0",
+    "react-switch": "^5.0.1",
+    "react-table": "^7.3.2",
+    "reactstrap": "^8.4.0",
+    "rsuite": "^4.2.1",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^1.0.0",
+    "xlsx": "^0.16.4"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.6.5",
+    "react-app-rewire-less": "^2.1.0",
+    "react-app-rewired": "^1.4.1"
+  }
+}
