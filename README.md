@@ -7,8 +7,8 @@
 
   **Requirements**
 
-	Docker : download from https://www.docker.com/
-	A server or a virtual machine
+	    Docker : download from https://www.docker.com/
+	    A server or a virtual machine
 	
 
 1. **Clone the application inHeart**
@@ -43,31 +43,23 @@
 	
 	You can run the spring boot app by typing the following command -
 
-	```bash
 	mvn spring-boot:run
-	```
 
 	The server will start on port 8090.
 
 	You can also package the application in the form of a `jar` file and then run it like so -
 
-	```bash
 	mvn package
 	java -jar target/inHeart-server.jar
-	```
 
 **Run the react application**
 
 	First go to the `inHeart-client` folder -
 
-	```bash
 	cd inHeart-client
-	```
 
 	Then type the following command to install the dependencies and start the application -
 
-	```bash
 	npm install && npm start
-	```
 
 	The front-end server will start on port `3000`.
