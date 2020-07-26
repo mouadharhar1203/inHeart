@@ -13,10 +13,8 @@
 
 1. **Clone the application inHeart**
 
-	```bash
 	git clone https://github.com/mouadharhar1203/inHeart
 	cd inHEART
-	```
 
 2. **Docker Compose**
 
