@@ -28,7 +28,7 @@
 	+ http://localhost:9090/
 
 
-## Steps to Setup the Full Stack application with Docker :
+## Steps to Setup the Full Stack application without Docker :
 
   **Requirements**
 
