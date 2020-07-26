@@ -33,11 +33,9 @@
 
   **Requirements**
 
-	```bash
-	- JDK 11 - IDE (Eclipse, IntelliJ IDEA ...) for backend
-	- Node - IDE(Vistual Studio Code ...) for frontend
-	- mySQL database on your server
-	```
+      JDK 11 - IDE (Eclipse, IntelliJ IDEA ...) for backend
+      Node - IDE(Vistual Studio Code ...) for frontend
+      mySQL database on your server
 	
 **Run the spring boot application**
 	
