@@ -1,8 +1,8 @@
-### Full Stack app with Spring Boot/Security, JWT, React JS, ReactStrap, mySQL and Docker
+## Full Stack app with Spring Boot/Security, JWT, React JS, ReactStrap, mySQL and Docker
 
 
 
-## Steps to Setup the Full Stack application with Docker :
+### Steps to Setup the Full Stack application with Docker :
 
   **Requirements**
 
